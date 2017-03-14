@@ -1,0 +1,21 @@
+<div class="container todo ng-scope layout-column" align="center" layout="column">
+    <text-input
+        task="$ctrl.task"
+        on-add="$ctrl.add(val)"
+        on-clear="$ctrl.clear()"
+    ></text-input>
+    <div layout="column">
+        <task-list
+            empty="$ctrl.notEmpty"
+            tasks="$ctrl.tasks"
+            on-done="$ctrl.done(el)"
+            on-remove="$ctrl.remove(el)"
+        ></task-list>
+        <task-listdone
+            empty="$ctrl.doneNotEmpty"
+            tasks="$ctrl.doneTasks"
+            on-undone="$ctrl.unDone(el)"
+            on-remove="$ctrl.removeDone(el)"
+        ></task-list>
+    </div>
+</div>

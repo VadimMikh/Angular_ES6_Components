@@ -1,0 +1,14 @@
+<form action="#" name="todoForm" flex="100" layout='row'>
+    <md-input-container class="md-block" flex="100" flex-gt-sm="100">
+        <label align="left">What to do</label>
+        <input required name="task" ng-model="$ctrl.task"  md-maxlength="100">
+        <div ng-messages="todoForm.task.$error" align="left">
+            <div ng-message="md-maxlength">100 letters max</div>
+            <div ng-message="required">Enter something and press "ADD"</div>
+        </div>
+    </md-input-container>
+    <div layout="row" layout-align="center center">
+        <md-button class="md-raised md-primary" ng-click="$ctrl.handleAddTask($ctrl.task)">Add</md-button>
+        <md-button class="md-raised md-warn" ng-click="$ctrl.handleClear()">Clear</md-button>
+    </div>
+</form>

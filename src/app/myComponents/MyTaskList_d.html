@@ -1,6 +1,6 @@
 <div layout="column">
     <div class="undone-tasks">
-        <h2 class="md-display-1" ng-class="{'show': $ctrl.empty}" align="center">Planned tasks</h2>
+        <h2 class="md-display-1" ng-class="{'show': $ctrl.empty}" align="center">Done tasks</h2>
         <md-list flex>
             <md-list-item class="secondary-button-padding" ng-repeat="task in $ctrl.tasks track by $index" align="left">
                 <p><span>{{$index+1}}. </span>{{ task }}</p>

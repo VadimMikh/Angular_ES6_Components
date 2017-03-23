@@ -1,4 +1,4 @@
-export class myTodoService {
+export class MyTodoService {
   constructor($log) {
     'ngInject';
 

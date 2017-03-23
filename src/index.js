@@ -4,7 +4,7 @@ import ngMaterial from 'angular-material';
 import 'angular-material/angular-material.css';
 
 // import {TodoService} from './app/todos/todos';
-import {myTodoService} from './app/myTodos/myTodos';
+import {MyTodoService} from './app/myTodos/myTodos';
 // import {App} from './app/containers/App';
 import {myApp} from './app/myContainers/myApp';
 // import {Header} from './app/components/Header';
@@ -25,12 +25,13 @@ angular
   .module('app', ['ui.router', ngMaterial])
   .config(routesConfig)
   // .service('todoService', TodoService)
-  .service('mytodoService', myTodoService)
+  .service('mytodoService', MyTodoService)
   // .component('app', App)
   .component('myApp', myApp)
   // .component('headerComponent', Header)
   // .component('footerComponent', Footer)
   .component('wrapSection', WrapSection)
+  // .component('mainSection', MainSection)
   // .component('todoTextInput', TodoTextInput)
   .component('textInput', TextInput)
   // .component('todoItem', TodoItem)

@@ -70,7 +70,5 @@ export class ToDoController {
 export const WrapSection = {
   template: require('./MyMainSection.html'),
   controller: ToDoController,
-  bindings: {
-
-  }
+  bindings: {}
 };

@@ -30,24 +30,24 @@ describe('TodoTextInput component', () => {
     expect(component.text).toEqual('Hello');
   }));
 
-  it('should call focus on element construction', angular.mock.inject($componentController => {
-    const focusSpy = jasmine.createSpy('focusSpy');
-    const bindings = {
-      text: 'Hello',
-      focus: focusSpy
-    };
-    const component = $componentController('todoTextInput', {}, bindings);
-    expect(component.focus).toHaveBeenCalled();
-  }));
+  // it('should call focus on element construction', angular.mock.inject($componentController => {
+  //   const focusSpy = jasmine.createSpy('focusSpy');
+  //   const bindings = {
+  //     text: 'Hello',
+  //     focus: focusSpy
+  //   };
+  //   const component = $componentController('todoTextInput', {}, bindings);
+  //   expect(component.focus).toHaveBeenCalled();
+  // }));
 
-  it('should not call focus on element construction', angular.mock.inject($componentController => {
-    const focusSpy = jasmine.createSpy('focusSpy');
-    const bindings = {
-      focus: focusSpy
-    };
-    const component = $componentController('todoTextInput', {}, bindings);
-    expect(component.focus).not.toHaveBeenCalled();
-  }));
+  // it('should not call focus on element construction', angular.mock.inject($componentController => {
+  //   const focusSpy = jasmine.createSpy('focusSpy');
+  //   const bindings = {
+  //     focus: focusSpy
+  //   };
+  //   const component = $componentController('todoTextInput', {}, bindings);
+  //   expect(component.focus).not.toHaveBeenCalled();
+  // }));
 
   it('should call onSave', angular.mock.inject($componentController => {
     const bindings = {
